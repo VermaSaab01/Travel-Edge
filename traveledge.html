@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Travel Edge</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="traveledge.css" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-2 text-info" href="#"
+            >The Travel Edge</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="py-5 bg-light text-center">
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-3">Welcome to The Travel Edge</h1>
+          <p class="lead mb-4 fw-bold">
+            Your trusted partner for unforgettable journeys and seamless travel
+            experiences.
+          </p>
+          <a
+            href="#contact"
+            class="btn rounded-pill bg-secondary-subtle text-secondary-emphasis fw-bold border-0 py-2 px-5"
+            >Get in Touch</a
+          >
+        </div>
+      </section>
+      <!-- About Us Section -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img
+                src="https://e0.pxfuel.com/wallpapers/115/893/desktop-wallpaper-collage-ast-240417b-ast-travel-tours-travel-and-tourism.jpg"
+                alt="About The Travel Edge"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-6 ps-3">
+              <h2 class="fw-bold mb-3 fs-1">About Us</h2>
+              <p>
+                At The Travel Edge, we are passionate about crafting
+                personalized travel experiences for our clients. With years of
+                expertise and a global network, we ensure every journey is
+                memorable, safe, and tailored to your needs.
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa-solid fa-check pe-2"></i>Experienced travel
+                  consultants
+                </li>
+                <li>
+                  <i class="fa-solid fa-check pe-2"></i>24/7 customer support
+                </li>
+                <li>
+                  <i class="fa-solid fa-check pe-2"></i>Custom itineraries
+                </li>
+                <li>
+                  <i class="fa-solid fa-check pe-2"></i>Best price guarantee
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Packages Section -->
+      <section id="tour-packages" class="py-5" data-aos="fade-up">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-4">Tour Packages</h2>
+          <ul
+            class="nav nav-tabs justify-content-center mb-4"
+            id="tourTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all"
+                type="button"
+                role="tab"
+                aria-controls="all"
+                aria-selected="true"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="north-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#north"
+                type="button"
+                role="tab"
+                aria-controls="north"
+                aria-selected="false"
+              >
+                North
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="south-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#south"
+                type="button"
+                role="tab"
+                aria-controls="south"
+                aria-selected="false"
+              >
+                South
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="east-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#east"
+                type="button"
+                role="tab"
+                aria-controls="east"
+                aria-selected="false"
+              >
+                East
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="west-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#west"
+                type="button"
+                role="tab"
+                aria-controls="west"
+                aria-selected="false"
+              >
+                West
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="central-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#central"
+                type="button"
+                role="tab"
+                aria-controls="central"
+                aria-selected="false"
+              >
+                Central
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="tourTabContent">
+            <!-- All Tab -->
+            <div
+              class="tab-pane fade show active"
+              id="all"
+              role="tabpanel"
+              aria-labelledby="all-tab"
+            >
+              <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg"
+                      class="card-img-top"
+                      alt="Taj Mahal"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Taj Mahal, Agra</h5>
+                      <p class="card-text">Iconic monument in North India.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2VyYWxhJTIwYmFja3dhdGVyc3xlbnwwfHwwfHx8MA%3D%3D"
+                      class="card-img-top"
+                      alt="Kerala Backwaters"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Kerala Backwaters</h5>
+                      <p class="card-text">Serene waters in South India.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://etripto.in/uploads/0000/1/2024/12/18/darjeeling-family-tour-package.jpg"
+                      class="card-img-top"
+                      alt="Darjeeling"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Darjeeling, West Bengal</h5>
+                      <p class="card-text">Hill station in East India.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- North Tab -->
+            <div
+              class="tab-pane fade"
+              id="north"
+              role="tabpanel"
+              aria-labelledby="north-tab"
+            >
+              <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg"
+                      class="card-img-top"
+                      alt="Taj Mahal"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Taj Mahal, Agra</h5>
+                      <p class="card-text">Iconic monument in North India.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1661962344178-19930ba15492?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVoJTIwbGFkYWtofGVufDB8fDB8fHww"
+                      class="card-img-top"
+                      alt="Leh Ladakh"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Leh Ladakh</h5>
+                      <p class="card-text">Adventure in the Himalayas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amFpcHVyfGVufDB8fDB8fHww"
+                      class="card-img-top"
+                      alt="Jaipur"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Jaipur, Rajasthan</h5>
+                      <p class="card-text">The Pink City of India.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- South Tab -->
+            <div
+              class="tab-pane fade"
+              id="south"
+              role="tabpanel"
+              aria-labelledby="south-tab"
+            >
+              <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2VyYWxhJTIwYmFja3dhdGVyc3xlbnwwfHwwfHx8MA%3D%3D"
+                      class="card-img-top"
+                      alt="Kerala Backwaters"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Kerala Backwaters</h5>
+                      <p class="card-text">Serene waters in South India.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                      class="card-img-top"
+                      alt="Goa Beaches"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Goa Beaches</h5>
+                      <p class="card-text">Famous beaches and nightlife.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1616606484004-5ef3cc46e39d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtcGl8ZW58MHx8MHx8fDA%3D"
+                      class="card-img-top"
+                      alt="Hampi"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hampi, Karnataka</h5>
+                      <p class="card-text">Ancient ruins and temples.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- East Tab -->
+            <div
+              class="tab-pane fade"
+              id="east"
+              role="tabpanel"
+              aria-labelledby="east-tab"
+            >
+              <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1622308644420-b20142dc993c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyamVlbGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                      class="card-img-top"
+                      alt="Darjeeling"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Darjeeling, West Bengal</h5>
+                      <p class="card-text">Hill station in East India.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://cdn1.tripoto.com/media/filter/nxxl/img/45716/TripDocument/1472898782_shillong.jpg.webp"
+                      class="card-img-top"
+                      alt="Shillong"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Shillong, Meghalaya</h5>
+                      <p class="card-text">Scenic beauty in the Northeast.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1677211352662-30e7775c7ce8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a29uYXJrJTIwc3VuJTIwdGVtcGxlfGVufDB8fDB8fHww"
+                      class="card-img-top"
+                      alt="Konark Sun Temple"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Konark Sun Temple, Odisha</h5>
+                      <p class="card-text">UNESCO World Heritage Site.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- West Tab -->
+            <div
+              class="tab-pane fade"
+              id="west"
+              role="tabpanel"
+              aria-labelledby="west-tab"
+            >
+              <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amFpcHVyfGVufDB8fDB8fHww"
+                      class="card-img-top"
+                      alt="Jaipur"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Jaipur, Rajasthan</h5>
+                      <p class="card-text">The Pink City of India.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVtYmFpfGVufDB8fDB8fHww"
+                      class="card-img-top"
+                      alt="Mumbai"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mumbai, Maharashtra</h5>
+                      <p class="card-text">The city that never sleeps.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1549468057-5b7fa1a41d7a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFubiUyMG9mJTIwa3V0Y2h8ZW58MHx8MHx8fDA%3D"
+                      class="card-img-top"
+                      alt="Rann of Kutch"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Rann of Kutch, Gujarat</h5>
+                      <p class="card-text">Salt desert festival experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Central Tab -->
+            <div
+              class="tab-pane fade"
+              id="central"
+              role="tabpanel"
+              aria-labelledby="central-tab"
+            >
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Khajuraho_temples_-_Chattarpur_-_Madhya_Pradesh_-_DSC001.jpg"
+                      class="card-img-top"
+                      alt="Khajuraho"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Khajuraho, Madhya Pradesh</h5>
+                      <p class="card-text">Famous for ancient temples.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://waybird.imgix.net/regions/kodak_images/000/000/197/original/tiger-kanha-national-park-india-timbuktu-h1.jpg?w=1420&h=946&crop=center%20center&fit=min&dpr=1&q=50&auto=format"
+                      class="card-img-top"
+                      alt="Kanha National Park"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Kanha National Park</h5>
+                      <p class="card-text">Wildlife safari experience.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm">
+                    <img
+                      src="https://www.shutterstock.com/image-photo/beautiful-sunset-view-satpura-mountain-260nw-2545269683.jpg"
+                      class="card-img-top"
+                      alt="Pachmarhi"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pachmarhi, Madhya Pradesh</h5>
+                      <p class="card-text">Hill station in Central India.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-5">Our Services</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Custom Tour Packages</h5>
+                  <p class="card-text">
+                    Tailor-made tours to suit your interests, budget, and
+                    schedule. Explore the world your way!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Corporate Travel</h5>
+                  <p class="card-text">
+                    Efficient and cost-effective travel solutions for
+                    businesses, meetings, and events.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Visa & Documentation</h5>
+                  <p class="card-text">
+                    Expert assistance with visas, travel insurance, and all
+                    necessary documentation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form class="card p-4 shadow-sm bg-secondary">
+                <div class="mb-3">
+                  <label for="name" class="form-label text-info">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label text-info">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label text-info"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="How can we help you?"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="rounded-pill bg-secondary-subtle text-secondary-emphasis fw-bold border-0 py-2"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-white text-secondary-emphasis text-center py-3">
+      <div class="container">
+        <small>&copy; 2025 The Travel Edge. All rights reserved.</small>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Add AOS CSS and JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
