@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #3d3f41;
+  color: #222;
+}
+
+
+.navbar-brand {
+  letter-spacing: 1.5px;
+  font-family: serif, Didone;
+}
+.navbar ul li a {
+  color: aqua;
+  font-family: serif, Didone;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: bold;
+  transition: color 1s;
+  text-shadow: #000000 0px 0px 2px;
+}
+
+.navbar ul li a:hover {
+  color: white !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  font-size: 1.2rem !important;
+  background-color: #00ffff !important;
+  text-shadow: #1c57d4 0px 0px 5px, #1c57d4 0px 0px 10px, #1c57d4 0px 0px 20px;
+}
+
+#home {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#23272b, #3d3f41, #23272b) !important;
+
+}
+#home h1 {
+  color: rgb(7, 255, 255);
+  text-shadow: #3d3f41 0px 0px 5px, #3d3f41 0px 0px 20px, #3d3f41 0px 0px 30px;
+  animation: spin360 1s linear !important;
+}
+
+@keyframes spin360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+#home p {
+  font-family: "Sirivennela", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+#home .btn:hover {
+  background-color: #02ffff74 !important;
+  color: #fff !important;
+  transition: background-color 1s, color 1s;
+  box-shadow: 0 4px 24px rgba(13, 110, 253, 0.12);
+}
+
+#about img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 10px rgb(164, 164, 164);
+}
+#about ul {
+  margin-top: 1.5rem;
+}
+#about li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-family: "Sirivennela", sans-serif;
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+section,
+#home,
+#about,
+#services,
+#contact {
+  background: #23272b;
+  color: #00ffff;
+}
+
+h2 {
+  color: #00ffff;
+  text-shadow: #3d3f41 0px 0px 5px, #3d3f41 0px 0px 20px, #3d3f41 0px 0px 30px;
+}
+
+h3{
+  font-family: serif, DioDone;
+}
+
+.card {
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.15);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-body p{
+  font-style: italic;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid aqua;
+}
+
+.nav-tabs .nav-link {
+  color: aqua;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  transition: color 0.2s;
+}
+
+.nav-tabs .nav-link.active {
+  background: #e3f0ff;
+  color: #222;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.08);
+}
+
+.nav-tabs .nav-link:hover {
+  color: white;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.05rem;
+}
+
+img {
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 24px rgba(13, 110, 253, 0.12);
+}
+
+#services .card {
+  border: none;
+  border-radius: 1rem;
+}
+#services .card-title {
+  color: aqua;
+  font-weight: 600;
+}
+
+#contact .card {
+  border-radius: 1rem;
+  border: none;
+}
+#contact .form-label {
+  font-weight: 500;
+}
+
+footer {
+  background: aqua !important;
+  color: #fff;
+  letter-spacing: 1px;
+}
